@@ -20,7 +20,7 @@ namespace Boookstore1.Controllers
             _context = context;
         }
 
-        // GET: Books
+        // GET: Books //Comment added to chnage files
         public async Task<IActionResult> Index()
         {
             return View(await _context.Book.ToListAsync());
